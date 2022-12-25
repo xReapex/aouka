@@ -9,7 +9,6 @@
                 <div class="hidden sm:flex sm:items-center">
                     <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Home</a>
                     <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Products</a>
-                    <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Contact</a>
                 </div>
 
                 <div class="hidden sm:flex sm:items-center">
