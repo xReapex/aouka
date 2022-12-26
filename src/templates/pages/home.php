@@ -1,6 +1,5 @@
 <?php
 require 'src/templates/base.php';
-require 'src/templates/component/contact.php';
 ?>
 
 <title>BoatShop - Home</title>
@@ -24,7 +23,7 @@ require 'src/templates/component/contact.php';
         <div class="flex items-center text-center lg:text-left px-8 md:px-12 lg:w-1/2">
             <div>
                 <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl">Location de bateaux <span class="text-indigo-600">luxueux</span>!</h2>
-                <p class="mt-2 text-sm text-gray-500 md:text-base">Louez dès maintenant des bateaux luxueux pour vos voyages entre amis ou avec votre famille! Chacun de nos bateaux sont en parfait état et contrôlés régulièrement par nos équipes.</p>
+                <p class="mt-2 text-sm text-gray-500 md:text-base">Louez dès maintenant des bateaux luxueux pour vos voyages entre amis ou en famille ! Chacun de nos bateaux sont en parfait état et contrôlés régulièrement par nos équipes d'experts.</p>
                 <div class="flex justify-center lg:justify-start mt-6">
                     <a class="px-4 py-3 bg-gray-900 text-gray-200 text-xs font-semibold rounded hover:bg-gray-800" href="#">Lever les voiles</a>
                     <a class="mx-4 px-4 py-3 bg-gray-300 text-gray-900 text-xs font-semibold rounded hover:bg-gray-400" href="#">Nos bateaux</a>

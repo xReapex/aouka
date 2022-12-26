@@ -6,6 +6,6 @@
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 <body>
-    <?php require 'component/navbar.php';?>
+    <?php require 'component/navbar.php'; require 'src/templates/component/contact.php';?>
 </body>
 </html>

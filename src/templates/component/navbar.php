@@ -7,8 +7,8 @@
                 </div>
 
                 <div class="hidden sm:flex sm:items-center">
-                    <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Accueil</a>
-                    <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Nos bateaux</a>
+                    <a href="/" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Accueil</a>
+                    <a href="/products" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Nos bateaux</a>
                 </div>
 
                 <div class="hidden sm:flex sm:items-center">

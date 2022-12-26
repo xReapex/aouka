@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1749d1f-4655-4193-bee3-fd98121d1a9d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/template/component/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/component/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/component/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/component/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/component/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/component/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/home.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +25,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JMEEGDOAcvbKWa7qfP2heAvitL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dev\aouka\src\templates\pages" />
       <recent name="E:\Dev\aouka\src\template\component" />
       <recent name="E:\Dev\aouka\src\template" />
       <recent name="E:\Dev\aouka\src" />
@@ -53,10 +61,23 @@
       <workItem from="1671956333760" duration="4722000" />
       <workItem from="1672067686715" duration="132000" />
       <workItem from="1672067821290" duration="52000" />
+      <workItem from="1672067875132" duration="7338000" />
+      <workItem from="1672081879669" duration="666000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
