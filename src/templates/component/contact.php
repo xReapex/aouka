@@ -1,7 +1,11 @@
 <title>BoatShop - Contact</title>
 
-<div  id="web3forms__widget" x-data="{ open: false }">
-    <div
+<style>
+    [x-cloak] { display: none; }
+</style>
+
+<div id="web3forms__widget" x-data="{ open: false }" x-cloak="">
+    <div x-cloak=""
         id="w3f__widget--content"
         x-show="open"
         x-transition:enter-start="opacity-0 translate-y-5"
@@ -119,7 +123,7 @@
 
         </div>
     </div>
-    <button
+    <button x-cloak=""
         id="w3f__widget--btn"
         @click="open = !open"
         class="fixed z-40 right-5 bottom-5 shadow-lg flex justify-center items-center w-14 h-14 bg-indigo-500 rounded-full focus:outline-none hover:bg-indigo-600 focus:bg-indigo-600 transition duration-300 ease"
@@ -195,7 +199,6 @@
     }
 </style>
 
-<script type="module" src="https://cdn.skypack.dev/twind/shim"></script>
 <script
     src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
     defer
