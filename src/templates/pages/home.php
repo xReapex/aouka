@@ -37,3 +37,5 @@ require 'src/templates/base.php';
         </div>
     </div>
 </div>
+
+<?php require 'src/templates/component/footer.php'?>

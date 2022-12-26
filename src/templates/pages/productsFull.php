@@ -86,3 +86,5 @@
         </div>
     </div>
 </section>
+
+<?php require 'src/templates/component/footer.php'?>
