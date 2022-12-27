@@ -11,6 +11,8 @@ Autoloader::register();
 
 class databaseManager
 {
+    protected $conn;
+
     public function __construct()
     {
         $dbConfig = require_once 'config.php';
@@ -20,5 +22,15 @@ class databaseManager
         if( $conn->connect_error ) {
             die("Error : MYSQL cannot connect to your database.");
         }
+
+        $this->conn = $conn;
+    }
+
+    /**
+     * @return mysqli
+     */
+    public function getConn()
+    {
+        return $this->conn;
     }
 }

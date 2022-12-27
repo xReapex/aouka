@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e1749d1f-4655-4193-bee3-fd98121d1a9d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formAction/contactForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/component/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/component/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/component/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/component/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/component/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/component/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/manager/databaseManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/manager/databaseManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/pages/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/pages/productsFull.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/pages/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +41,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dev\aouka\assets\boats" />
+      <recent name="E:\Dev\aouka\src\templates\component" />
       <recent name="E:\Dev\aouka\src\templates\pages" />
       <recent name="E:\Dev\aouka\src\template\component" />
       <recent name="E:\Dev\aouka\src\template" />
-      <recent name="E:\Dev\aouka\src" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +63,7 @@
       <workItem from="1672067821290" duration="52000" />
       <workItem from="1672067875132" duration="7338000" />
       <workItem from="1672081879669" duration="3287000" />
-      <workItem from="1672148950150" duration="3166000" />
+      <workItem from="1672148950150" duration="8266000" />
     </task>
     <servers />
   </component>
