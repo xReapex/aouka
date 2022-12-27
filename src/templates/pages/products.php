@@ -18,7 +18,7 @@ $products = $repository->getAll();
                 foreach ($products as $product) { ?>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block transform transition duration-300 hover:scale-105"
                                  src="assets/boats/<?php echo $product['image'] ?>">
                         </a>
                         <div class="mt-4">
