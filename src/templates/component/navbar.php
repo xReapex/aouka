@@ -12,8 +12,7 @@
                 </div>
 
                 <div class="hidden sm:flex sm:items-center">
-                    <a href="#" class="text-gray-800 text-sm font-semibold hover:text-indigo-600 mr-4">Connexion</a>
-                    <a href="#" class="text-gray-800 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-indigo-600 hover:border-indigo-600">Créer un compte</a>
+                    <a href="#" class="text-gray-800 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-indigo-600 hover:border-indigo-600">Réserver</a>
                 </div>
 
                 <div class="sm:hidden cursor-pointer">

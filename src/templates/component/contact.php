@@ -1,11 +1,3 @@
-<title>BoatShop - Contact</title>
-
-<style>
-    [x-cloak] {
-        display: none;
-    }
-</style>
-
 <div id="web3forms__widget" x-data="{ open: false }" x-cloak="">
     <div x-cloak=""
          id="w3f__widget--content"
@@ -18,49 +10,37 @@
          class="fixed flex flex-col z-50 bottom-[100px] top-0 right-0 h-auto left-0 sm:top-auto sm:right-5 sm:left-auto h-[calc(100%-95px)] w-full sm:w-[350px] overflow-auto min-h-[250px] sm:h-[600px] border border-gray-300 bg-white shadow-2xl rounded-md"
     >
         <div class="flex p-5 flex-col justify-center items-center h-32 bg-indigo-600">
-            <h3 class="text-lg text-white">How can we help?</h3>
-            <p class="text-white opacity-50">We usually respond in a few hours</p>
+            <h3 class="text-lg text-white">Envoyez nous un mail!</h3>
+            <p class="text-white opacity-50">Nous répondons en quelques heures.</p>
         </div>
         <div class="bg-gray-50 flex-grow p-6">
 
             <form
-                    action="/src/formAction/contactForm.php"
-                    method="POST"
+                    action=""
+                    method="post"
                     id="form"
                     class="needs-validation"
                     novalidate
             >
-                <input
-                        type="hidden"
-                        name="subject"
-                        value="New Submission from Web3Forms"
-                />
-                <input
-                        type="checkbox"
-                        name="botcheck"
-                        id=""
-                        style="display: none;"
-                />
-
 
                 <div class="mb-4">
                     <label
                             for="full_name"
                             class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Full Name</label
+                    >Nom</label
                     >
                     <input
                             type="text"
                             name="name"
                             id="full_name"
-                            placeholder="Enter your name"
+                            placeholder="Entrez votre nom"
                             required
                             class="w-full px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                     />
                     <div
                             class="empty-feedback invalid-feedback text-red-400 text-sm mt-1"
                     >
-                        Please provide your full name.
+                        Entrez votre nom
                     </div>
                 </div>
 
@@ -69,21 +49,21 @@
                     <label
                             for="email"
                             class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Email Address</label
+                    >Adresse mail</label
                     >
                     <input
                             type="email"
                             name="email"
                             id="email"
-                            placeholder="Enter your email"
+                            placeholder="Entrez votre email"
                             required
                             class="w-full px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                     />
                     <div class="empty-feedback text-red-400 text-sm mt-1">
-                        Please provide your email address.
+                        Entrez une adresse mail
                     </div>
                     <div class="invalid-feedback text-red-400 text-sm mt-1">
-                        Please provide a valid email address.
+                        Entrez une adresse mail valide
                     </div>
                 </div>
 
@@ -92,30 +72,27 @@
                     <label
                             for="message"
                             class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
-                    >Your Message</label
+                    >Votre message</label
                     >
 
                     <textarea
                             rows="4"
                             name="message"
                             id="message"
-                            placeholder="Your Message"
+                            placeholder="Votre message"
                             class="w-full h-28 px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
                             required
                     ></textarea>
                     <div
                             class="empty-feedback invalid-feedback text-red-400 text-sm mt-1"
                     >
-                        Please enter your message.
+                        Entrez votre message.
                     </div>
                 </div>
-                <button
-                        @click="open = false"
+                <input
                         type="submit"
                         class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
                 >
-                    Send Message
-                </button>
             </form>
 
 
@@ -173,6 +150,11 @@
 </div>
 
 <style>
+
+    [x-cloak] {
+        display: none;
+    }
+
     .invalid-feedback,
     .empty-feedback {
         display: none;
@@ -205,11 +187,7 @@
 <script>
     (function () {
         "use strict";
-        /*
-         * Form Validation
-         */
 
-        // Fetch all the forms we want to apply custom validation styles to
         const forms = document.querySelectorAll(".needs-validation");
         const result = document.getElementById("result");
         // Loop over them and prevent submission
@@ -223,9 +201,6 @@
 
                         form.querySelectorAll(":invalid")[0].focus();
                     } else {
-                        /*
-                         * Form Submission using fetch()
-                         */
 
                         const formData = new FormData(form);
                         event.preventDefault();
@@ -236,39 +211,6 @@
                         });
                         const json = JSON.stringify(object);
                         result.innerHTML = "Please wait...";
-
-                        fetch("https://api.web3forms.com/submit", {
-                            method: "POST",
-                            headers: {
-                                "Content-Type": "application/json",
-                                Accept: "application/json"
-                            },
-                            body: json
-                        })
-                            .then(async (response) => {
-                                let json = await response.json();
-                                if (response.status == 200) {
-                                    result.innerHTML = json.message;
-                                    result.classList.remove("text-gray-500");
-                                    result.classList.add("text-green-500");
-                                } else {
-                                    console.log(response);
-                                    result.innerHTML = json.message;
-                                    result.classList.remove("text-gray-500");
-                                    result.classList.add("text-red-500");
-                                }
-                            })
-                            .catch((error) => {
-                                console.log(error);
-                                result.innerHTML = "Something went wrong!";
-                            })
-                            .then(function () {
-                                form.reset();
-                                form.classList.remove("was-validated");
-                                setTimeout(() => {
-                                    result.style.display = "none";
-                                }, 5000);
-                            });
                     }
                     form.classList.add("was-validated");
                 },
