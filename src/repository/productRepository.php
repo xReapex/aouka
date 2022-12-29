@@ -24,4 +24,20 @@ class productRepository
         $products = $conn->query("SELECT * FROM products");
         return $products;
     }
+
+    public function isProductExists($id)
+    {
+        $conn = $this->dbManager->getConn();
+        $product = $conn->query("SELECT * FROM products WHERE id=". $id);
+
+        // change here
+        if ($product->fetch_assoc() == null){ return false; } else { return true; };
+    }
+
+    public function findById($id)
+    {
+        $conn = $this->dbManager->getConn();
+        $product = $conn->query("SELECT * FROM products WHERE id=". $id);
+        return $product;
+    }
 }

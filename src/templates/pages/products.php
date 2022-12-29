@@ -1,15 +1,15 @@
-<?php use App\repository\productRepository;
+<?php
 
-require 'src/templates/base.php'; ?>
+use App\repository\productRepository;
 
-    <title>BoatShop - Products</title>
-
-<?php require 'src/repository/productRepository.php';
+require 'src/templates/base.php';
+require 'src/repository/productRepository.php';
 
 $repository = new productRepository();
 $products = $repository->getAll();
 
 ?>
+    <title>BoatShop - Products</title>
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-wrap -m-4">
@@ -17,8 +17,8 @@ $products = $repository->getAll();
                 <?php
                 foreach ($products as $product) { ?>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                        <a class="block relative h-48 rounded overflow-hidden">
-                            <img alt="ecommerce" class="object-cover object-center w-full h-full block transform transition duration-300 hover:scale-105"
+                        <a class="block relative h-48 rounded overflow-hidden" href="/boat/<?php echo $product['id'] ?>">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block transform transition duration-500 hover:scale-105"
                                  src="assets/boats/<?php echo $product['image'] ?>">
                         </a>
                         <div class="mt-4">
@@ -33,7 +33,7 @@ $products = $repository->getAll();
                                 <?php
                             } else {
                                 ?>
-                                <p class="mt-1"><b class=" text-indigo-500"><?php echo $product['price']; ?>€</b> /jour
+                                <p class="mt-1"><b class="text-indigo-500"><?php echo $product['price']; ?>€</b> /jour
                                 </p>
                                 <?php
                             }

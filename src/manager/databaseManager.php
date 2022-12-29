@@ -22,7 +22,7 @@ class databaseManager
         if( $conn->connect_error ) {
             die("Error : MYSQL cannot connect to your database.");
         }
-
+        $conn->set_charset("utf8");
         $this->conn = $conn;
     }
 
