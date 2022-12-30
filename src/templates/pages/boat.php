@@ -71,7 +71,7 @@ $product = $product->fetch_assoc();
           </span>
 
                 </div>
-                <p class="leading-relaxed"><?php echo $product['description'] ?></p>
+                <p class="leading-relaxed text-justify"><?php echo $product['description'] ?></p>
                 <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
                     <div class="flex items-center">
                         <span class="mr-3">Durée de la location</span>
