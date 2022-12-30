@@ -6,7 +6,7 @@ require 'src/templates/base.php';
 
 <div class="w-full mt-20">
     <nav class="bg-white shadow-lg">
-        <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+        <div class="md:flex items-center justify-between px-8 md:px-12">
             <div class="flex justify-between items-center">
                 <div class="md:hidden">
                     <button type="button" class="block text-gray-800 hover:text-gray-700 focus:text-gray-700 focus:outline-none">

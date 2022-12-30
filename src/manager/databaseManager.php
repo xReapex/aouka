@@ -15,7 +15,7 @@ class databaseManager
 
     public function __construct()
     {
-        $dbConfig = require_once 'config.php';
+        $dbConfig = require 'config.php';
         $dbConfig = $dbConfig['database'];
 
         $conn = new mysqli($dbConfig['host'], $dbConfig['user'], $dbConfig['pass'], $dbConfig['base']);

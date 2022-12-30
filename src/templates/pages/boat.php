@@ -95,10 +95,10 @@ $product = $product->fetch_assoc();
                     </div>
                 </div>
                 <div class="flex">
-                    <span class="title-font font-medium text-2xl text-gray-900"><b class="text-indigo-500"><b id="show"><?php echo $product['price'] ?></b>€</b></span>
-                    <button class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                    <span class="title-font font-medium text-2xl text-gray-900">Total: <b class="text-indigo-500"><b id="show"><?php echo $product['price'] ?></b>€</b></span>
+                    <a href="/reservation" class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
                         Réserver
-                    </button>
+                    </a>
 
                 </div>
             </div>

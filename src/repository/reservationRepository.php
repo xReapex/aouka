@@ -9,7 +9,7 @@ use App\Autoloader;
 require_once 'src/Autoloader.php';
 Autoloader::register();
 
-class productRepository
+class reservationRepository
 {
     private $dbManager;
     private $conn;
@@ -20,18 +20,8 @@ class productRepository
         $this->conn = $this->dbManager->getConn();
     }
 
-    public function getAll()
+    public function add($name, $sname, $guest, $boat, $date, $datef)
     {
-        return $this->conn->query("SELECT * FROM products");
-    }
-
-    public function isProductExists($id)
-    {
-        return $this->conn->query("SELECT * FROM products WHERE id=". $id);
-    }
-
-    public function findById($id)
-    {
-        return $this->conn->query("SELECT * FROM products WHERE id=". $id);
+        var_dump($this->conn->query("INSERT INTO `reservation` (name, sname, guest, boat, date, datef) VALUES ('$name', '$sname', '$guest', '$boat', '$date', '$datef') "));
     }
 }
