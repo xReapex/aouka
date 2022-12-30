@@ -22,6 +22,6 @@ class reservationRepository
 
     public function add($name, $sname, $guest, $boat, $date, $datef)
     {
-        var_dump($this->conn->query("INSERT INTO `reservation` (name, sname, guest, boat, date, datef) VALUES ('$name', '$sname', '$guest', '$boat', '$date', '$datef') "));
+        $this->conn->query("INSERT INTO `reservation` (name, sname, guest, boat, date, datef) VALUES ('$name', '$sname', '$guest', '$boat', '$date', '$datef') ");
     }
 }

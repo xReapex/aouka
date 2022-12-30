@@ -10,15 +10,9 @@ $productRepository = new productRepository();
 $reservationRepository = new reservationRepository();
 
 $msg = null;
+$success = false;
 
 if (count($_POST) !== 0) {
-
-    echo $_POST['name'];
-    echo $_POST['sname'];
-    echo $_POST['guest'];
-    echo $_POST['boat'];
-    echo $_POST['date'];
-    echo $_POST['datef'];
 
     // Check if all field are filled
     if ($_POST['name'] !== null || $_POST['sname'] !== null || $_POST['guest'] !== null || $_POST['date'] !== null || $_POST['datef'] !== null) {
@@ -47,6 +41,7 @@ if (count($_POST) !== 0) {
 
         // If not error, save.
         if ($msg == null) {
+            $success = true;
             $reservationRepository->add($_POST['name'], $_POST['sname'], $_POST['guest'], $_POST['boat'], $_POST['date'], $_POST['datef']);
         }
     }
@@ -59,7 +54,7 @@ if (count($_POST) !== 0) {
     <div class="mx-auto w-full max-w-[550px]">
         <form action="" method="post">
 
-            <?php if ($msg == null) { ?>
+            <?php if ($success) { ?>
                 <div class="text-center py-4 lg:px-4">
                     <div class="p-2 bg-green-800 items-center text-green-100 leading-none lg:rounded-full flex lg:inline-flex"
                          role="alert">
