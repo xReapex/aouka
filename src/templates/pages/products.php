@@ -16,7 +16,7 @@ $products = $repository->getAll();
 
                 <?php
                 foreach ($products as $product) { ?>
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="boat">
                         <a class="block relative h-48 rounded overflow-hidden" href="/boat/<?php echo $product['id'] ?>">
                             <img alt="ecommerce" class="object-cover object-center w-full h-full block transform transition duration-500 hover:scale-105"
                                  src="assets/boats/<?php echo $product['image'] ?>">
@@ -49,5 +49,9 @@ $products = $repository->getAll();
             </div>
         </div>
     </section>
+
+    <script>
+        ScrollReveal().reveal('#boat', { interval: 150, easing: 'ease-in' });
+    </script>
 
 <?php require 'src/templates/component/footer.php' ?>
